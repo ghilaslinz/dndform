@@ -6,13 +6,13 @@ import { ReactFormGenerator } from "react-form-builder2";
 function displayform({ id }) {
 	const [data, setData] = useState();
 	useEffect(() => {
-		fetch(`http://localhost:3000/api/findform/${id}`)
+		fetch(`https://dndform.vercel.app/api/findform/${id}`)
 			.then((res) => res.json())
 			.then((json) => setData(json));
 	}, []);
 	console.log(data);
 	const onSubmit = async (datas) => {
-		const res = await fetch(`http://localhost:3000/api/submitform/${id}`, {
+		const res = await fetch(`https://dndform.vercel.app/api/submitform/${id}`, {
 			method: "POST",
 			headers: {
 				"Content-type": "application/json; charset=UTF-8",

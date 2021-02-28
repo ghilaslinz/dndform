@@ -4,7 +4,7 @@ import GraphComponent from "../../components/grapgComponent";
 function Graph({ id }) {
 	const [data, setData] = useState();
 	useEffect(() => {
-		fetch(`http://localhost:3000/api/findgraph/${id}`)
+		fetch(`https://dndform.vercel.app/api/findgraph/${id}`)
 			.then((res) => res.json())
 			.then((json) => setData(json));
 	}, []);

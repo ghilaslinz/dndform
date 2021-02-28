@@ -13,7 +13,7 @@ const Login = ({ setUserLogedIn }) => {
 	const router = useRouter();
 	const handlelogin = async (e) => {
 		e.preventDefault();
-		const user = await fetch("http://localhost:3000/api/login", {
+		const user = await fetch("https://dndform.vercel.app/api/login", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json;charset=utf-8",
@@ -31,7 +31,7 @@ const Login = ({ setUserLogedIn }) => {
 	};
 	const handlesignUp = async (e) => {
 		e.preventDefault();
-		const user = await fetch("http://localhost:3000/api/signup", {
+		const user = await fetch("https://dndform.vercel.app/api/signup", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

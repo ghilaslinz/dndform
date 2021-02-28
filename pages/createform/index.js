@@ -18,7 +18,7 @@ Index.getInitialProps = async (ctx) => {
 	const dummy = {
 		tools: [{}, {}],
 	};
-	const res = await fetch("http://localhost:3000/api/createform", {
+	const res = await fetch("https://dndform.vercel.app/api/createform", {
 		method: "POST",
 		headers: {
 			"Content-type": "application/json; charset=UTF-8",
