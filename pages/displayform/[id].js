@@ -21,6 +21,7 @@ function displayform({ id }) {
 		});
 		const json = await res.json();
 		console.log(json);
+		 window.location.href = '../comfrimation';
 	};
 
 	return (
