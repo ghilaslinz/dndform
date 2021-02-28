@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const userActionTypes = {\n  setUserLogedIn: \"setUserLogedIn\",\n  Logout: \"Logout\"\n};","map":null,"metadata":{},"sourceType":"module"}

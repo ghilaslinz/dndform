@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var actionTypes = {\n  setProducts: \"setProducts\",\n  setProduct: \"setProduct\"\n};","map":null,"metadata":{},"sourceType":"module"}

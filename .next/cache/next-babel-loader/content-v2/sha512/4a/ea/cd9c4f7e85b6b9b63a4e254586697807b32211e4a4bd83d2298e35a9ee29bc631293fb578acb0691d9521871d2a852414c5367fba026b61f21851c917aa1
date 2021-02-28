@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { userActionTypes } from \"./userActionTypes\";\nexport const setUserLogedIn = user => ({\n  type: userActionTypes.setUserLogedIn,\n  payload: user\n});\nexport const Logout = () => ({\n  type: userActionTypes.Logout\n});","map":null,"metadata":{},"sourceType":"module"}

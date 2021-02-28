@@ -1,0 +1,22 @@
+{
+  "/_app": "pages/_app.js",
+  "/api/createform": "pages/api/createform.js",
+  "/api/findform/[id]": "pages/api/findform/[id].js",
+  "/api/findgraph/[id]": "pages/api/findgraph/[id].js",
+  "/api/forms": "pages/api/forms.js",
+  "/api/login": "pages/api/login.js",
+  "/api/signup": "pages/api/signup.js",
+  "/api/submitform/[id]": "pages/api/submitform/[id].js",
+  "/comfrimation": "pages/comfrimation.html",
+  "/createform": "pages/createform.js",
+  "/dashboard": "pages/dashboard.html",
+  "/displayform/[id]": "pages/displayform/[id].js",
+  "/editform/[id]": "pages/editform/[id].js",
+  "/form": "pages/form.html",
+  "/graph/[id]": "pages/graph/[id].js",
+  "/": "pages/index.html",
+  "/login": "pages/login.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}

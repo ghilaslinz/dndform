@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const actionTypes = {\n  setProducts: \"setProducts\",\n  setProduct: \"setProduct\"\n};","map":null,"metadata":{},"sourceType":"module"}
