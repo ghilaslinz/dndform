@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactFormGenerator, ElementStore } from "react-form-builder2";
 import { get, post } from "../mongoose/requests";
-
+import Link from 'next/link'
 export default class Demobar extends React.Component {
 	constructor(props) {
 		super(props);
@@ -12,7 +12,7 @@ export default class Demobar extends React.Component {
 			roPreviewVisible: false,
 		};
 
-		this.submit = this.onSubmit.bind(this);
+	//	this.submit = this.onSubmit.bind(this);
 		const update = this.onChange.bind(this);
 		ElementStore.subscribe((state) => update(state.data));
 	}
@@ -48,7 +48,7 @@ export default class Demobar extends React.Component {
 			data,
 		});
 	}
-
+/*
 	onSubmit(data) {
 		const { postUrl } = this.props;
 		console.log("onSubmit", data);
@@ -58,7 +58,7 @@ export default class Demobar extends React.Component {
 		});
 		return false;
 	}
-
+*/
 	render() {
 		let modalClass = "modal";
 		if (this.state.previewVisible) {
@@ -76,8 +76,11 @@ export default class Demobar extends React.Component {
 		}
 
 		return (
+			
 			<div className='clearfix' style={{ margin: "10px", width: "70%" }}>
-				<h4 className='float-left'>Preview</h4>
+				<Link href='/'>
+				<h4 className='float-left'>Go back to Dashboard</h4>
+				</Link>
 				<button
 					className='btn btn-primary float-right'
 					style={{ marginRight: "10px" }}
@@ -85,6 +88,7 @@ export default class Demobar extends React.Component {
 				>
 					Preview Form
 				</button>
+			{/*
 				<button
 					className='btn btn-default float-right'
 					style={{ marginRight: "10px" }}
@@ -92,6 +96,7 @@ export default class Demobar extends React.Component {
 				>
 					Alternate/Short Form
 				</button>
+				
 				<button
 					className='btn btn-default float-right'
 					style={{ marginRight: "10px" }}
@@ -99,7 +104,7 @@ export default class Demobar extends React.Component {
 				>
 					Read Only Form
 				</button>
-
+				*/}
 				{this.state.previewVisible && (
 					<div className={modalClass}>
 						<div className='modal-dialog modal-lg'>
@@ -107,15 +112,16 @@ export default class Demobar extends React.Component {
 								<div className='modal-body'>
 									<ReactFormGenerator
 										download_path=''
-										back_action='/'
-										back_name='Back'
+										//back_action='/'
+										//back_name='Back'
 										answer_data={{}}
-										action_name='Save'
-										form_action='/'
+										//action_name='Save'
+										//form_action='/'
 										form_method='POST'
 										onSubmit={this.submit}
 										variables={this.props.variables}
 										data={this.state.data}
+										hide_actions={true}
 									/>
 								</div>
 								<div className='modal-footer'>
