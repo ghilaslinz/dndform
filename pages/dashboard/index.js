@@ -118,7 +118,7 @@ function Dashboard() {
 												verticalAlign: "middle",
 											}}
 										>
-											<p>Display the answers</p>
+											<p>Display student answers</p>
 										</Button>
 									</Link>
 								</Card.Content>
